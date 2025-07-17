@@ -11,6 +11,7 @@ import { CTABlock } from "./sections/cta";
 import { FaqAccordion } from "./sections/faq-accordion";
 import { FeatureCardsWithIcon } from "./sections/feature-cards-with-icon";
 import { HeroBlock } from "./sections/hero";
+import { Hero2Block } from "./sections/hero2";
 import { ImageLinkCards } from "./sections/image-link-cards";
 import { SubscribeNewsletter } from "./sections/subscribe-newsletter";
 
@@ -34,6 +35,7 @@ const BLOCK_COMPONENTS = {
   cta: CTABlock,
   faqAccordion: FaqAccordion,
   hero: HeroBlock,
+  hero2: Hero2Block,
   featureCardsIcon: FeatureCardsWithIcon,
   subscribeNewsletter: SubscribeNewsletter,
   imageLinkCards: ImageLinkCards,

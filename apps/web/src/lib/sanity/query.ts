@@ -109,6 +109,15 @@ const heroBlock = /* groq */ `
   }
 `;
 
+const hero2Block = /* groq */ `
+  _type == "hero2" => {
+    ...,
+    ${imageFragment},
+    ${buttonsFragment},
+    ${richTextFragment}
+  }
+`;
+
 const faqFragment = /* groq */ `
   "faqs": array::compact(faqs[]->{
     title,
@@ -165,6 +174,7 @@ const pageBuilderFragment = /* groq */ `
     _type,
     ${ctaBlock},
     ${heroBlock},
+    ${hero2Block},
     ${faqAccordionBlock},
     ${featureCardsIconBlock},
     ${subscribeNewsletterBlock},
