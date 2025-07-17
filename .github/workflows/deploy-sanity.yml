@@ -24,7 +24,8 @@ jobs:
       SANITY_STUDIO_DATASET: ${{ secrets.SANITY_STUDIO_DATASET }}
       SANITY_STUDIO_TITLE: ${{ secrets.SANITY_STUDIO_TITLE }}
       SANITY_STUDIO_PRESENTATION_URL: ${{ secrets.SANITY_STUDIO_PRESENTATION_URL }}
-      HOST_NAME: ${{ github.head_ref || github.ref_name }}
+      HOST_NAME: ${{ secrets.SANITY_HOST_NAME }}
+      #HOST_NAME: ${{ github.head_ref || github.ref_name }}
 
     steps:
       - name: Checkout repository
